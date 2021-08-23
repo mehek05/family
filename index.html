@@ -1,0 +1,42 @@
+<html> 
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <title> Family Book </title>
+    <body>
+        <h1> Family Book </h1>
+        <hr>  <hr>
+        <img id="familyimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438191265l/8719069._SX318_.jpg">
+        <h3 id="one"> 1.Our Family Book</h3>
+        <button type="button" onclick="family()"> Next </button>
+        <hr>
+        <script> 
+        var names=[
+            "2.father (Mandeep Sidhu)",
+            "3.mother (Simran Sidhu)",
+             "4.me (Mehek Sidhu)",
+             "5.my sister (Mahie Sidhu)",
+             "6.my sister (Ruhi Sidhu)",
+             ];
+             var images=[
+                 "https://comps.canstockphoto.com/portrait-of-father-eps-vector_csp45092088.jpg",
+                 "https://image.shutterstock.com/image-vector/working-mom-260nw-158801603.jpg",
+                 "https://png.pngtree.com/png-clipart/20190604/original/pngtree-vector-cartoon-girl-with-glasses-png-image_1044496.jpg",
+                 "https://w7.pngwing.com/pngs/992/41/png-transparent-girl-long-hair-cartoon-girl-child-fashion-girl-hand-thumbnail.png",
+                 "https://i.pinimg.com/originals/00/d5/51/00d551fc24d714c279691cd31eb449b4.jpg"
+                 ];
+                 var i=0;
+                 function family(){
+                     document.getElementById("one").innerHTML=names[i];
+                     document.getElementById("familyimage").src=images[i];
+                     i++;
+                     if(i==6){
+                         i=0;
+
+                     }}
+
+
+        </script>
+    </body>
+</html>
